@@ -1,5 +1,5 @@
 [build-system]
-requires = ["setuptools>=61"]
+requires = ["setuptools>=77"]
 build-backend = "setuptools.build_meta"
 
 [project]
@@ -7,10 +7,14 @@ name = "pronto-pr"
 version = "0.1.0"
 description = "Automatically press GitHub's \"Update branch\" button on all your open PRs."
 readme = "README.md"
-license = { text = "MIT" }
+license = "MIT"
 authors = [{ name = "Zachary Love" }]
 requires-python = ">=3.9"
 dependencies = ["pystray>=0.19,<0.20", "pillow"]
+
+[project.urls]
+Homepage = "https://github.com/Zachary-Love/PRonto"
+Issues = "https://github.com/Zachary-Love/PRonto/issues"
 
 [project.scripts]
 pronto = "pronto:main"

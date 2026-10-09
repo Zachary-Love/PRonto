@@ -1,7 +1,7 @@
 # PRonto
 
 <p align="center">
-  <img src="assets/pronto.png" width="128" alt="PRonto logo: a dog in profile with a green dot">
+  <img src="https://raw.githubusercontent.com/Zachary-Love/PRonto/main/assets/pronto.png" width="128" alt="PRonto logo: a dog in profile with a green dot">
 </p>
 
 **Never look at an out-of-date pull request again.**
