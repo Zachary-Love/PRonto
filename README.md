@@ -396,12 +396,6 @@ Project layout:
 
 A safe way to try changes end to end: create a throwaway repo, open a PR, then push a commit to `main` so the PR falls behind. `pronto --max-age 1` should then report it as `updated`.
 
-### Publishing a release
-
-1. Bump `version` in `pyproject.toml`.
-2. `uv build`
-3. `uv publish --token pypi-...`
-
 ## License
 
 [MIT](LICENSE) © 2026 Zachary Love
