@@ -18,14 +18,37 @@ skipped    acme/infra#1205: merge conflict between base and head
 
 ---
 
+## Quick start
+
+**1. Install PRonto**
+
+```sh
+uv tool install pronto-pr
+```
+
+No `uv`? Use `pipx install pronto-pr`, or [install uv](https://docs.astral.sh/uv/getting-started/installation/) first.
+
+**2. Turn it on**
+
+```sh
+export GITHUB_TOKEN=ghp_yourtokenhere
+pronto install
+```
+
+You need a GitHub token with the `repo` scope. If you don't have one, see [Creating a GitHub token](#creating-a-github-token); it takes about a minute.
+
+That's it. PRonto checks your PRs right away, then every 15 minutes, and keeps running after a reboot. A little dog appears in your menu bar or system tray: click it to turn PRonto off, change the settings, or run it now.
+
+---
+
 ## Contents
 
+- [Quick start](#quick-start)
 - [Features](#features)
 - [How it works](#how-it-works)
 - [Requirements](#requirements)
 - [Installation](#installation)
 - [Creating a GitHub token](#creating-a-github-token)
-- [Quick start](#quick-start)
 - [Usage](#usage)
   - [One-off runs](#one-off-runs)
   - [Running in the background](#running-in-the-background)
@@ -153,18 +176,6 @@ $env:GITHUB_TOKEN = "ghp_yourtokenhere"        # Windows PowerShell
 ```
 
 `pronto install` checks the token with GitHub and saves it, so you only need to do this once.
-
-## Quick start
-
-```sh
-uv tool install pronto-pr
-export GITHUB_TOKEN=ghp_yourtokenhere
-
-pronto --dry-run      # 1. see which PRs it would look at (changes nothing)
-pronto install        # 2. run it every 15 minutes in the background, plus the tray icon
-```
-
-That's it. PRonto runs once right away, then every 15 minutes, and comes back automatically after a reboot. A little dog appears in your menu bar or system tray.
 
 ## Usage
 
